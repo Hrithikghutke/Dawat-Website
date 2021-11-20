@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@400;700;900&family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+$titleFont: "Dancing Script", cursive;
+$heading1Font: "PT Sans Narrow", sans-serif;
+$heading2Font: "Lato", sans-serif;
+
+$white: #fefefe;
+$gray: rgb(90, 90, 90);
+$offWhite: rgba(255, 255, 255, 0.842);
+$lightGray: rgba(160, 160, 160, 0.644);
+$orange: #ca3d26;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0px !important;
+  padding-left: 0px !important ;
+}
+
+//----------------------------------------------------- Promo Slider -------------------------------------
+
+.promo-img {
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  filter: brightness(30%);
+}
+
+.carousel-item {
+  position: relative;
+  padding: 0px 0px 32px 0px;
+  height: 90vh;
+  background: #dddccf;
+}
+
+.carousel-item::after {
+  background: linear-gradient(-45deg, $white 16px, transparent 0),
+    linear-gradient(45deg, $white 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}
+
+.carousel-indicators {
+  bottom: 1rem !important;
+}
+
+.carousel-indicators button {
+  border-radius: 50%;
+  height: 10px !important;
+  width: 10px !important;
+  margin: 7px !important;
+}
+
+.promo-slider-container {
+  position: absolute;
+  top: 0;
+  padding: 0 !important;
+  z-index: -1;
+}
+
+//---------------------------------------------- Info Nav -----------------------------------------------
+
+.info-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.5px solid $lightGray;
+  color: $offWhite;
+}
+
+.info-nav-contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.info-nav-email-container {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.info-nav-email-container i {
+  padding-right: 10px;
+  transform: translateY(1px);
+}
+
+.info-nav-number-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-nav-number-container i {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.info-nav-social-cta-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-nav-social-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-nav-social-container i {
+  padding: 0px 15px 0px 15px;
+}
+.fa-wifi {
+  padding: 0px 0px 0px 15px !important;
+}
+.info-nav-bookTable-container {
+  padding: 0px 25px 0px 15px;
+}
+
+.info-nav-bookTable-container button {
+  font-family: $heading2Font;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  background-color: $orange;
+  color: $offWhite;
+}
+
+//--------------------------------------------- Main - Header - Nav --------------------------------------
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 15vh;
+}
+
+/*.header::after {
+  background: linear-gradient(-45deg, rgb(29, 29, 29) 10px, transparent 0),
+    linear-gradient(45deg, rgb(22, 22, 22) 10px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}*/
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-links-container {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.header-links-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header-links-container ul li a {
+  font-family: $heading2Font;
+  color: $white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-links-container ul li a:hover {
+  color: $orange;
+}
+
+.search-icon-container i {
+  color: $white;
+  margin-right: 9vh;
+  transform: translateY(1.5px);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-icon-container i:hover {
+  color: $orange;
+}
+//----------------------------------------------- Hero Title Section -------------------------------------
+
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+.hero-txt-container h2 {
+  font-size: 4rem;
+  font-family: $titleFont;
+  font-weight: 600;
+  color: $white;
+}
+
+.hero-txt-container h3 {
+  font-family: $heading1Font;
+  color: $white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-btn-container {
+  padding: 10px;
+}
+
+.hero-btn-container button {
+  padding: 10px 70px 10px 70px;
+  font-family: $heading2Font;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid $white;
+  background-color: transparent;
+  color: $white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn-container button:hover {
+  background-color: $orange;
+}
+
+//--------------------------------------------------------------------------------------------------------
+
+.our-story-container {
+  margin-top: 25vh;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Assets/our_story_background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.our-story-title-container h2 {
+  font-family: $titleFont;
+  color: $orange;
+  font-size: 5rem;
+}
+
+.os-txt {
+  font-family: $heading2Font;
+  color: $gray;
+}
+
+.our-story-left-part p::first-letter {
+  display: block;
+  float: left;
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 0px 10px;
+  transform: translateY(-3px);
+}
+
+.our-story-txt-row {
+  padding: 50px 170px;
+}

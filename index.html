@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dawat</title>
+    <!----------------------------------------------- CSS ---------------------------------------------------->
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/responsive.css" />
+    <!-------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------- BOOTSTRAP ---------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <!----------------------------------------------- JQUERY ---------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!----------------------------------------------- FONT AWESOME ---------------------------------------------------->
+    <script src="https://kit.fontawesome.com/d494c03b01.js" crossorigin="anonymous"></script>
+    <!-------------------------------------------------------------------------------------------------------->
+</head>
+
+<body>
+    <!----------------------------------------------- HTML CODE ---------------------------------------------------->
+
+
+    <!----------------------------------------------- Info-Header ------------------------------------------------->
+    <div class="container-fluid row info-nav">
+        <div class="col-md-6 info-nav-contact-container">
+            <div class="info-nav-email-container">
+                <i class="far fa-envelope"></i>
+                <p>Email: Info@Restuarant.com</p>
+            </div>
+            <div class="info-nav-number-container">
+                <i class="fas fa-phone-alt"></i>
+                <p>Telephone: +1800&nbsp;234&nbsp;5678</p>
+            </div>
+        </div>
+
+        <div class="col-md-6 info-nav-social-cta-btn-container">
+            <div class="info-nav-social-container">
+                <i class="fab fa-facebook-f social-icons"></i>
+                <i class="fab fa-twitter social-icons"></i>
+                <i class="fab fa-behance social-icons"></i>
+                <i class="fas fa-wifi social-icons"></i>
+
+            </div>
+            <div class="info-nav-bookTable-container">
+                <button>Book a Table</button>
+            </div>
+
+        </div>
+    </div>
+    <!----------------------------------------------- Main - Header ---------------------------------------------->
+
+    <div class="container-fluid header row">
+        <div class="logo-container col-md-6">
+            <img src="./Assets/main_logo.png" alt="">
+        </div>
+        <div class="header-links-container col-md-6">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Offer</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-icon-container">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------- Hero Title Section ------------------------------------------------->
+
+
+    <div class="container hero-title-container">
+        <div class="hero-txt-container">
+            <h2>Our Menus</h2>
+            <h3>See What's <strong>New</strong> Today</h3>
+        </div>
+        <div class="hero-btn-container">
+            <button>Todays Menu</button>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------- Promo Slider ------------------------------------------------->
+    <div class="container-fluid promo-slider-container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="promo-img" src="Assets/promo_slide_1.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img class="promo-img" src="Assets/promo_slide_2.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img class="promo-img" src="Assets/promo_slide_3.jpg" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------ Our Story Section ----------------------------------------------->
+
+    <div class="container-fluid our-story-container">
+        <div class="our-story-title-container">
+            <h2>Our Story</h2>
+        </div>
+        <div class="row our-story-txt-row">
+            <div class="col-md-6 os-txt our-story-left-part">
+                <p>M enc non elit libero. Quisque massa porta ut placerat lentesque non diam. Nam convallis porta
+                    rhoncus. Maecenas varius eget turpis suscipit porta sapien tinc Mauris tempor libero fringilla orci
+                    vivrra faucibue fringilla orci vivrra faucibus. Integer ullamcorper erat in tellus efficitur, quis
+                    porta sapien tincidunt. Nunc mattis lectus sed semper semper.
+                <p>
+            </div>
+            <div class="col-md-6 os-txt our-story-right-part">
+                <p>Quisque sit amet turpis et ipsum elementum facilisis. Quisque sed placerat libero. Pellentesque nec
+                    tellus sollicitudin, sollicitudin ligula non, tristique nibh Donec vitae turpis sagittis, cursus
+                    nunc ac, aliquet nunc. Donec viverra vel massa at posuere. Aliquam et fringilla augue consequat
+                    posuere sem, eu ornares viverra veleso massa at posuere. Aliquam et fringilla augue
+                <p>
+            </div>
+        </div>
+        <div class="our-story-sign-container">
+            <img src="./Assets/about_sign.png" alt="./Assets/about_sign.png">
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <!----------------------------------------------- JAVASCRIPT LINKS---------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <!--------------------------------------------------------------------------------------------------->
+</body>
+
+</html>
