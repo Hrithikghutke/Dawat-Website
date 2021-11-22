@@ -27,30 +27,32 @@
 
 
     <!----------------------------------------------- Info-Header ------------------------------------------------->
-    <div class="container-fluid row info-nav">
-        <div class="col-md-6 info-nav-contact-container">
-            <div class="info-nav-email-container">
-                <i class="far fa-envelope"></i>
-                <p>Email: Info@Restuarant.com</p>
-            </div>
-            <div class="info-nav-number-container">
-                <i class="fas fa-phone-alt"></i>
-                <p>Telephone: +1800&nbsp;234&nbsp;5678</p>
-            </div>
-        </div>
-
-        <div class="col-md-6 info-nav-social-cta-btn-container">
-            <div class="info-nav-social-container">
-                <i class="fab fa-facebook-f social-icons"></i>
-                <i class="fab fa-twitter social-icons"></i>
-                <i class="fab fa-behance social-icons"></i>
-                <i class="fas fa-wifi social-icons"></i>
-
-            </div>
-            <div class="info-nav-bookTable-container">
-                <button>Book a Table</button>
+    <div class="row ">
+        <div class="row info-nav">
+            <div class="col-md-6 info-nav-contact-container">
+                <div class="info-nav-email-container">
+                    <i class="far fa-envelope"></i>
+                    <p>Email: Info@Restuarant.com</p>
+                </div>
+                <div class="info-nav-number-container">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Telephone: +1800&nbsp;234&nbsp;5678</p>
+                </div>
             </div>
 
+            <div class="col-md-6 info-nav-social-cta-btn-container">
+                <div class="info-nav-social-container">
+                    <i class="fab fa-facebook-f social-icons"></i>
+                    <i class="fab fa-twitter social-icons"></i>
+                    <i class="fab fa-behance social-icons"></i>
+                    <i class="fas fa-wifi social-icons"></i>
+
+                </div>
+                <div class="info-nav-bookTable-container">
+                    <button>Book a Table</button>
+                </div>
+
+            </div>
         </div>
     </div>
     <!----------------------------------------------- Main - Header ---------------------------------------------->
@@ -94,13 +96,13 @@
     <div class="container-fluid promo-slider-container">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item promo-item active">
                     <img class="promo-img" src="Assets/promo_slide_1.jpg" class="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item promo-item">
                     <img class="promo-img" src="Assets/promo_slide_2.jpg" class="d-block w-100" alt="..." />
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item promo-item">
                     <img class="promo-img" src="Assets/promo_slide_3.jpg" class="d-block w-100" alt="..." />
                 </div>
             </div>
@@ -114,7 +116,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            <div class="carousel-indicators">
+            <div class="carousel-indicators promo-indicators">
                 <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
@@ -150,6 +152,66 @@
             <img src="./Assets/about_sign.png" alt="./Assets/about_sign.png">
         </div>
     </div>
+
+    <!------------------------------------------- Sepcial Package Section ---------------------------------------------->
+
+
+    <div class="sp-container">
+        <div class="sp-heading-container">
+            <h3>Special Package</h3>
+            <img src="./Assets/red seperator.png" alt="./Assets/red seperator.png">
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators sp-slider-indicators-container">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner sp-carousel-container ">
+                <div class="carousel-item active sp-content-container">
+                    <div class="sp-card-container">
+                        <img src="./Assets/blog-1.jpg" alt="">
+                    </div>
+                    <div class="sp-order-card-container">
+                        <div class="sp-order-card-content-container">
+                            <h3>40% off for 9" - 12" pizza - Wed, Thu,Friday only</h3>
+                            <p>Pizza 12 inch + 1 side Dish + 1.5L Cola Bottle Only From 209,000</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item sp-content-container">
+                    <div class="sp-card-container">
+                        <img src="./Assets/blog-2.jpg" alt="">
+                    </div>
+                    <div class="sp-order-card-container">
+                        <div class="sp-order-card-content-container">
+                            <h3>40% off for 9" - 12" pizza - Wed, Thu,Friday only</h3>
+                            <p>Pizza 12 inch + 1 side Dish + 1.5L Cola Bottle Only From 209,000</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item sp-content-container">
+                    <div class="sp-card-container">
+                        <img src="./Assets/blog-3.jpg" alt="">
+                    </div>
+                    <div class="sp-order-card-container">
+                        <div class="sp-order-card-content-container">
+                            <h3>40% off for 9" - 12" pizza - Wed, Thu,Friday only</h3>
+                            <p>Pizza 12 inch + 1 side Dish + 1.5L Cola Bottle Only From 209,000</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <!----------------------------------------------------------------------------------------------------------------->
 
